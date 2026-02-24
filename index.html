@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal Discovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h2>🥗 Meal Discovery</h2>
+        <div class="nav-links">
+            <a href="index.html">Discovery</a>
+            <a href="planner.html">My Planner</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Find Suitable Meals</h1>
+        <div style="margin-bottom: 25px;">
+            <input type="text" id="mealInput" placeholder="Enter ingredient (e.g., chicken)...">
+            <button class="btn btn-search" onclick="fetchMeals()">Search API</button>
+        </div>
+        <div id="mealResults"></div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
